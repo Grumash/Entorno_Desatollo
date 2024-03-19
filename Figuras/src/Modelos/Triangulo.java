@@ -1,26 +1,39 @@
 package Modelos;
-
-
 import java.util.*;
 
+/**
+ * 
+ */
+public class Triangulo {
 
-public class Rectangulo {
-
-
-
+    
     private int Base;
     private int Altura;
 
-    public void Rectangulo(int Base, int Altura) {
-       this.Altura=1;
-       this.Base=1;
+ 
+    public void Triangulo( int Base,int Altura) {
+        this.Altura=1;
+        this.Base=1;
+    }
+    
+    public Triangulo() {
     }
 
     /**
-     * @param Base
+     * @return
+     */
+    public int GetArea() {
+        // TODO implement here
+        return Base*Altura/2;
+    }
+
+    /**
+     * @param Base 
+     * @return
      */
     public void SetBase(int Base) {
-        this.Base=Base;
+        // TODO implement here
+         this.Base=Base;
     }
 
     /**
@@ -32,9 +45,11 @@ public class Rectangulo {
     }
 
     /**
-     * @param Altura
+     * @param Altura 
+     * @return
      */
     public void SetAltura(int Altura) {
+        // TODO implement here
         this.Altura=Altura;
     }
 
@@ -45,19 +60,5 @@ public class Rectangulo {
         // TODO implement here
         return this.Altura;
     }
-
-    /**
-     * 
-     */
-    public int GetArea() {
-        return Base*Altura;
-    }
-
-    /**
-     * 
-     */
-    public int GetPerimetro() {
-        return 2*Base+(2*Altura);
-              }
 
 }

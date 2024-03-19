@@ -1,12 +1,19 @@
 package App;
 
-import Modelos.Rectangulo;
-        
+import Modelos.*;
+
 public class NewMain {
     public static void main(String[] args) {
         
         Rectangulo r1=new Rectangulo();
-        Rectangulo r2=new Rectangulo(2,3);
+        Rectangulo r2=new Rectangulo();
+        
+        Circulo c1=new Circulo();
+        Circulo c2=new Circulo();
+        
+        Triangulo t1=new Triangulo();
+        Triangulo t2=new Triangulo();
+        
         
         
         int area1=r1.GetArea();
