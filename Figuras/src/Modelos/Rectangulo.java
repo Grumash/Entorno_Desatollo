@@ -1,20 +1,39 @@
 package Modelos;
 
 
-import java.util.*;
-
-
-public class Rectangulo {
-
+public class Rectangulo extends Figura {
+	
+	
 
 
     private int Base;
     private int Altura;
 
-    public void Rectangulo(int Base, int Altura) {
-       this.Altura=1;
-       this.Base=1;
+    /**
+     * Constructor que crea un rectangulo con la base y la altura especificadas, en metros
+     *  
+     * @param Base		la base del rectangulo , en metros
+     * @param Altura	la altura del rectangulo, en metros
+     */
+    
+    public Rectangulo(int Base, int Altura) {
+       this.Altura=Altura;
+       this.Base=Base;
     }
+	/**
+     *@author Mouad 
+     *
+     * Constructor por defecto.Crea un rectangulo con base y altura 1, en metros
+     */
+    public Rectangulo() {
+    	
+        this.Altura=1;
+        this.Base=1;
+    	
+    }   
+    
+
+
 
     /**
      * @param Base
@@ -31,9 +50,7 @@ public class Rectangulo {
         return this.Base;
     }
 
-    /**
-     * @param Altura
-     */
+
     public void SetAltura(int Altura) {
         this.Altura=Altura;
     }
@@ -45,18 +62,19 @@ public class Rectangulo {
         // TODO implement here
         return this.Altura;
     }
-
+    
     /**
-     * 
+     * @see modelos.Figura#area
      */
-    public int GetArea() {
+    @Override
+    public double area() {
         return Base*Altura;
     }
-
     /**
-     * 
+     * @see modelos.Figura#perimetro
      */
-    public int GetPerimetro() {
+  	@Override
+    public double perimetro() {
         return 2*Base+(2*Altura);
               }
 

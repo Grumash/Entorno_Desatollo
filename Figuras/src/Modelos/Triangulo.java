@@ -1,5 +1,4 @@
 package Modelos;
-import java.util.*;
 
 /**
  * 
@@ -28,8 +27,7 @@ public class Triangulo {
     }
 
     /**
-     * @param Base 
-     * @return
+     * @param Base
      */
     public void SetBase(int Base) {
         // TODO implement here
@@ -44,10 +42,7 @@ public class Triangulo {
         return this.Base;
     }
 
-    /**
-     * @param Altura 
-     * @return
-     */
+
     public void SetAltura(int Altura) {
         // TODO implement here
         this.Altura=Altura;

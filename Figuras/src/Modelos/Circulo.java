@@ -15,7 +15,7 @@ public class Circulo {
     public int Diametro;
 
     public void Circulo( int Radio,int Diametro) {
-        this.Radio=1;
+        this.Radio=2;
         this.Diametro=1;
     }
 
@@ -41,8 +41,7 @@ public class Circulo {
     }
 
     /**
-     * @param Radio 
-     * @return
+     * @param Radio
      */
     public void SetRadio(int Radio) {
         // TODO implement here
@@ -58,8 +57,7 @@ public class Circulo {
     }
 
     /**
-     * @param Diametro 
-     * @return
+     * @param Diametro
      */
     public void SetDiametro(int Diametro) {
         // TODO implement here
